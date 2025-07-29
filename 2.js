@@ -21,24 +21,15 @@ let ageInSeconds = age*secondsInAYear
 console.log(ageInSeconds)
 */
 // Incrementing And Decrementing //
-/*let highFives = 0
+let highFives = 0
 ++highFives
 console.log(highFives)
 ++highFives
 console.log(highFives)
 --highFives
 console.log(highFives)
-let highFives = 0
-highFives++
-highFives++
-highFives++
-console.log(highFives)
 
-highFives = 0
-++highFives
-++highFives
-++highFives
-console.log(highFives)
+
 let x = 10
 x = x + 5
 console.log(x)
@@ -48,56 +39,63 @@ x -=5
 console.log(x)
 let balloons = 100
 balloons *= 4
-console.log(balloons)*/
+console.log(balloons)
 
 // Strings
-/*let myAwesomeString = "Hello World";
+let myAwesomeString = "Hello World";
 myAwesomeString = 5
 console.log(myAwesomeString);
 let numberNine = 9
 let stringNine = "9"
-let sum = numberNine  stringNine;
+let sum = numberNine + stringNine;
 console.log(sum);
 let greeting = "Hello "
 let myNickname = "Nick"
-console.log(greeting + myNickname)*/
+console.log(greeting + myNickname)
 
 //Finding the Length of a String
-/*let stringLength = "Supercalifragilisticexpialidocious"
-console.log(stringLength.length);
+let stringLength = "Supercalifragilisticexpialidocious"
+console.log(stringLength.length); // 34
 let javascript = "java" + "script";
-console.log(javascript.length);*/
+console.log(javascript.length); // 10
 
 // Getting a Single Character from a String
-/*let myName = "Andrew Rivers"
-console.log(myName[0]);
-console.log(myName[1]);
-console.log(myName[2]);*/
+let myName = "Andrew Rivers"
+console.log(myName[0]); // A
+console.log(myName[1]); // n
+console.log(myName[2]); // d
+
 
 // Cutting Up Strings
-/*
-
 let longString = "My long string is long";
 let slicedWords = longString.slice(3, 14)
-console.log(slicedWords);
+console.log(slicedWords); // long string
 
 let slicedWord = longString.slice(3)
-console.log(slicedWord);
-*/
+console.log(slicedWord); // long string is long
 
 // Changing Strings to All Capital
-/*let firstUpperCase = "Hello there, how are you doing?"
-let upperCase = firstUpperCase.toUpperCase()
+let initialString = "Hello there, how are you doing?"
+let upperCase = initialString.toUpperCase()
 console.log(upperCase) // HELLO THERE, HOW ARE YOU DOING?
 
-firstLowerCase = "hELlo THERE, hOW ARE yOu doINg?"
-let lowerCase = firstLowerCase.toLowerCase()
-console.log(lowerCase) // hello there, how are you doing?*/
+initialString = "hELlo THERE, hOW ARE yOu doINg?"
+let lowerCase = initialString.toLowerCase()
+console.log(lowerCase) // hello there, how are you doing?
 
 // TASK: how to turn the firstLowerCase into firstUpperCase ==//
-let firstLowerCase = "hELlo THERE, hOW ARE yOu doINg?"
-let upperCase = firstLowerCase.toUpperCase()
+let sillyString = "hELlo THERE, hOW ARE yOu doINg?"
+let firstLetter = sillyString[0].toUpperCase();
+console.log(firstLetter)
+let restLetters = sillyString.slice(1).toLowerCase()
+console.log(restLetters)
+let result = firstLetter + restLetters;
+console.log(result);
 
-console.log(upperCase)
+
+
+
+
+
 
 
