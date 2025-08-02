@@ -22,4 +22,14 @@ console.log(noSeparator) // MonkeyCatFishLizard
 letspaceSeparator = boringAnimals.join(" ")
 console.log(letspaceSeparator) // Monkey Cat Fish Lizard
 
+/*
+If the values in the array aren’t strings,
+JavaScript will convert them to strings before joining them together:
+*/
+let ages = [11, 14, 79];
+let jointAges = ages.join(" ")
+console.log (jointAges) // "11 14 79"
+console.log(typeof(jointAges)) // string
+
+
 
