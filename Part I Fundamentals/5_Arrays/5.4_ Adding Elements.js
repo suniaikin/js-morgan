@@ -6,6 +6,9 @@ let animals = [
 
 animals =[]
 
+// [array].push()
+// [array].unshift()
+
 animals.push('PEPPA  PIG')
 console.log(animals)
 

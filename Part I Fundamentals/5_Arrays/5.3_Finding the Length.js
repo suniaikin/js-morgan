@@ -1,4 +1,5 @@
 // Finding the Length of an Array
+
 let maniacs = ["Yakko", "Wakko", "Dot"];
 console.log(maniacs.length) // 3
 let lastElement = [maniacs.length - 1];

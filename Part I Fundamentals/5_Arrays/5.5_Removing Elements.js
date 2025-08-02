@@ -1,3 +1,6 @@
+// array].pop()
+// array].shift()
+
 let animals = ["Polar Bear", "Monkey", "Cat",
 "Dog", "Llama"]
 
