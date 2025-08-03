@@ -1,17 +1,26 @@
 // 🎃DESCRIPTION🎃
-/* Extend the random insult generator so it generates insults
-like “Your [body part] is more [adjective] than a [animal]’s
-[animal body part].” (Hint: You’ll need to create another
-array. */
+/* Extend the random insult generator so it generates insults */
 
 // ✅SOLUTION✅
 let randomWords = ['dog', 'cat', 'horse']
-let randomVerbs = ['meows', 'barks', 'neighs']
+let randomVerbs = ['barking', 'meowing', 'neighing']
+let randomAdjectives = ["smelly", "boring", "stupid"];
 
 let randomWord = randomWords[Math.floor(Math.random() * randomWords.length)]
-let randomVerb = randomVerbs[Math.floor(Math.random() * randomVerbs.length)]
+let randomWord2 = randomWords[Math.floor(Math.random() * randomWords.length)]
+let randomAdjective = randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)]
+let randomAdjective2 = randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)]
 
-let randomSentence = `Look! That ${randomWord} ${randomVerb} like a ${randomWord}`
+if (randomWord === randomWords[0]) {
+	randomVerb = randomVerbs[0]
+} else if (randomWord === randomWords[1]) {
+	randomVerb = randomVerbs[1]
+} else if (randomWord === randomWords[2]) {
+	randomVerb = randomVerbs[2]
+}
+
+
+let randomSentence = `Look! That ${randomAdjective} ${randomWord} ${randomVerb} like a ${randomAdjective2} ${randomWord2}`
 console.log(randomSentence)
 
 // 💖BEST PRACTICE💖
