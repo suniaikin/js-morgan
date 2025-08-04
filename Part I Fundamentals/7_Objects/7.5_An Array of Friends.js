@@ -13,3 +13,14 @@ let kate = {
 	age: 9,
 	luckyNumbers: [1, 2, 3]
 };
+
+let friends = [anna, dave, kate];
+
+let friend1 = friends[1];
+console.log(friend1)
+
+let friend2Name = friends[2].name;
+console.log(friend2Name)
+
+let friend1LuckyNumber = friends[0].luckyNumbers[1];
+console.log(friend1LuckyNumber)
