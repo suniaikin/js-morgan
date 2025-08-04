@@ -14,5 +14,7 @@ let kate = {
 	luckyNumbers: [1, 2, 3]
 };
 
+let friends = [anna, dave, kate];
+
 console.log(friends[1]);
 
