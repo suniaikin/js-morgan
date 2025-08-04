@@ -16,4 +16,6 @@ name: "Pancake",
 legs: 4,
 isAwesome: true
 }
+console.log(dog.isBrown) // undefined
+
 
