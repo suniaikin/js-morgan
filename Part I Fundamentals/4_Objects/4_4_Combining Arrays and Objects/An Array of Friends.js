@@ -23,4 +23,4 @@ let friend2Name = friends[2].name;
 console.log(friend2Name)
 
 let friend1LuckyNumber = friends[0].luckyNumbers[1];
-console.log(friend1LuckyNumber)
+console.log(friend1LuckyNumber) // 4
