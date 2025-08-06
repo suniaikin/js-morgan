@@ -13,3 +13,11 @@ let timesToSayHello = 3
 for (let i = 0; i < timesToSayHello; i++) {
 	console.log("Hello")
 }
+
+// Using for Loops with Arrays and Strings
+/*One very common use of for loops is to do something with every element in an array or every character in a string */
+
+let animals = ["Lion", "Flamingo", "Polar Bear", "Boa Constrictor"];
+for(let i = 0; i < animals.length; i++) {
+	console.log(`There is ${animals[i]} in zoo.`)
+}
