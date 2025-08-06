@@ -21,3 +21,8 @@ let animals = ["Lion", "Flamingo", "Polar Bear", "Boa Constrictor"];
 for(let i = 0; i < animals.length; i++) {
 	console.log(`There is ${animals[i]} in zoo.`)
 }
+
+let name = "Andrew"
+for(let i=0; i<name.length; i++) {
+	console.log(`My name is spelling as ${name[i]}`)
+}
