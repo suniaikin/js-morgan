@@ -6,5 +6,10 @@ each turn around the loop.
 
 for (let sheepCounted = 0; sheepCounted < 10; sheepCounted++) {
 	console.log(`I have counted ${sheepCounted} sheep!`)
+} console.log("Zzzzzzz")
+
+
+let timesToSayHello = 3
+for (let i = 0; i < timesToSayHello; i++) {
+	console.log("Hello")
 }
-console.log("Zzzzzzz")
