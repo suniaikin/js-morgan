@@ -26,3 +26,7 @@ let name = "Andrew"
 for(let i=0; i<name.length; i++) {
 	console.log(`My name is spelling as ${name[i]}`)
 }
+
+for (let x = 2; x < 10000; x = x * 2) {
+	console.log(x)
+}
