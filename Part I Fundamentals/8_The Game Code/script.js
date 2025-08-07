@@ -7,6 +7,12 @@ let words = [
 ];
 
 // Pick a random word
-
 let word = words[Math.floor(Math.random() * words.length)];
 console.log(word);
+
+// Set up the answer array
+let answerArray = [];
+for(let i = 0; i < words.length; i++) {
+	answerArray[i] = "_";
+}
+let remainingLetters = words.length;
