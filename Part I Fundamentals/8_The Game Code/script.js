@@ -19,6 +19,10 @@ let remainingLetters = words.length;
 
 // The game loop
 while (remainingLetters > 0) {
+     // Show the player their progress
+	alert(answerArray.join(" "));
+	
 
+}
 	
 }
