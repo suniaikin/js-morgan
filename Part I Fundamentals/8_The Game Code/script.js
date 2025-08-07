@@ -26,11 +26,16 @@ while (remainingLetters > 0) {
 		alert("Please enter a single letter.");
 	} else {
 		// Update the game state with the guess
+		let foundLetter = false;
 		for (let j = 0; j < word.length; j++) {
 			if (word[j] === guess) {
 				answerArray[j] = guess;
 				remainingLetters--;
+				foundLetter = true;
 			}
+		}
+		if (foundLetter === false) {
+			alert("Wrong letter!");
 		}
 	}
 	
