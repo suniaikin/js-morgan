@@ -53,5 +53,10 @@ while (remainingLetters > 0 && attempts < 6) {
 	}
 	
 }
-alert(answerArray.join(" "));
-alert("Good job! The answer was " + word);
+
+if (remainingLetters === 0) {
+    alert(answerArray.join(" "));
+    alert("Good job! The answer was " + word);
+} else {
+    alert("You've stopped the game or ran out of attempts. The word was " + word);
+}
