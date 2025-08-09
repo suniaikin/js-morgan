@@ -38,7 +38,10 @@ while (remainingLetters > 0 && attempts < 6) {
 		for (let j = 0; j < word.length; j++) {
 			if (word[j] === guess) {
 				answerArray[j] = guess;
-				remainingLetters--;
+				if (answerArray[j] !== "_") {
+					remainingLetters--;
+					console.log(remainingLetters);
+				}
 				foundLetter = true;
 			}
 		}
