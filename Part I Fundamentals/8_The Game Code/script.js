@@ -43,11 +43,12 @@ while (remainingLetters > 0 && attempts < 6) {
 					remainingLetters--;
 					foundLetter = true;
 				}
-				foundLetter = true;
 			}
 		}
 		if (foundLetter === false) {
+			attempts++
 			alert(`Wrong letter! You have ${MAX_ATTEMPTS - attempts} left!`);
+			
 		}
 	}
 	
