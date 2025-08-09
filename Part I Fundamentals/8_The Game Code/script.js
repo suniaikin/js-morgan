@@ -37,7 +37,7 @@ while (remainingLetters > 0 && attempts < 6) {
 		let foundLetter = false;
 		let usedLetter = false;
 		for (let j = 0; j < word.length; j++) {
-			if (word[j] === guess) {
+			if (word[j] === guess && answerArray[j] === "_") {
 				answerArray[j] = guess;
 				if (answerArray[j] !== "_" ) {
 					remainingLetters--;
