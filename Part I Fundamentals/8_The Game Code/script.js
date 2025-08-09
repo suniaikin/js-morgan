@@ -3,7 +3,10 @@ let words = [
 	"javascript",
 	"monkey",
 	"amazing",
-	"pancake"
+	"pancake",
+	"lowercase",
+	"programming",
+	"computer"
 ];
 // Pick a random word
 let word = words[Math.floor(Math.random() * words.length)];
@@ -13,12 +16,17 @@ for (let i = 0; i < words.length; i++) {
 	answerArray[i] = "_";
 }
 let remainingLetters = words.length;
+
+// Attempts
+let attempts = 0;
+let MAX_ATTEMPTS = 3;
+
 // The game loop
-while (remainingLetters > 0) {
+while (remainingLetters > 0 && attempts < 6) {
 	// Show the player their progress
 	alert(answerArray.join(" "));
 	// Get a guess from the player
-	let guess = prompt("Guess a letter, or click Cancel to stop playing")
+	let guess = prompt("Guess a letter, or click Cancel to stop playing").toLowerCase();
 	if (guess === null) {
 		// Exit the game loop
 		break;
@@ -35,7 +43,8 @@ while (remainingLetters > 0) {
 			}
 		}
 		if (foundLetter === false) {
-			alert("Wrong letter!");
+			attempts++
+			alert(`Wrong letter! You have ${MAX_ATTEMPTS - attempts} left!`);
 		}
 	}
 	
