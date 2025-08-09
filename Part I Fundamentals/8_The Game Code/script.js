@@ -35,12 +35,13 @@ while (remainingLetters > 0 && attempts < 6) {
 	} else {
 		// Update the game state with the guess
 		let foundLetter = false;
+		let usedLetter = false;
 		for (let j = 0; j < word.length; j++) {
 			if (word[j] === guess) {
 				answerArray[j] = guess;
-				if (answerArray[j] !== "_") {
+				if (answerArray[j] !== "_" ) {
 					remainingLetters--;
-					console.log(remainingLetters);
+					foundLetter = true;
 				}
 				foundLetter = true;
 			}
