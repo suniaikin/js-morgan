@@ -53,3 +53,9 @@ while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
 		
 	}
 }
+if (remainingLetters === 0) {
+    alert(answerArray.join(" "));
+    alert("Good job! The answer was " + randomWord);
+} else {
+    alert("You've stopped the game or ran out of attempts. The word was " + randomWord);
+}
