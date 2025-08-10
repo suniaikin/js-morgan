@@ -39,13 +39,17 @@ while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
 		for (let x = 0; x < randomWord.length; x++) {
 			if (randomWord[x] === guess && answerWordArray[x] === "_") {
 				answerWordArray[x] = guess;
-				if (answerArray[x] !== "_" ) {
+				if (answerArray[x] !== "_") {
 					remainingLetters--;
 					foundLetter = true;
 				}
 			}
 		}
-	
+		if (foundLetter === false) {
+			attempts++
+			alert(`Wrong letter! You have ${MAX_ATTEMPTS - attempts} left!`);
+		}
+		
 		
 	}
 }
