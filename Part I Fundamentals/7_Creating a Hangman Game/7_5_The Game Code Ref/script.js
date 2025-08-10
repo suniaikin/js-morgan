@@ -10,7 +10,6 @@ let words = [
 ];
 
 
-
 // Pick a random word
 let word = words[Math.floor(Math.random() * words.length)];
 // Set up the answer array
@@ -32,17 +31,15 @@ let MAX_ATTEMPTS = 6;
 while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
 
 	alert(answerArray.join(" "));
+
 	let guess = prompt("Guess a letter, or click Cancel to stop playing");
 	if (guess === null) {
 		break;
 	}
-
 	guess = guess.toLowerCase();
-
 	if (guess.length !== 1) {
 		alert("Please enter a single letter.");
 		continue;
-
 	} else {
 
 		let alreadyGuessed = false;
