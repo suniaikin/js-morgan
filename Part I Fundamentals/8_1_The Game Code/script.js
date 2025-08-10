@@ -1,0 +1,39 @@
+// Create an array of words
+let words = [
+	"javascript",
+	"amazing",
+	"pancake",
+];
+
+let answerWordArray = []
+
+let randomWord = words[Math.floor(Math.random() * words.length)];
+for (let i = 0; i < randomWord.length; i++) {
+	answerWordArray[i] = "_"
+}
+
+let remainingLetters = randomWord.length;
+
+let attempts = 0;
+let MAX_ATTEMPTS = 6;
+
+while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
+	alert(answerWordArray.join(" "));
+	let guess = prompt(`Guess a letter, or click "Cancel" to stop playing`);
+	if (guess === null) break
+	if (guess.length !== 1) {
+		alert("Please enter a single letter");
+	} else {
+		let alreadyGuessed = false;
+		for (let j = 0; j < answerWordArray.length; j++) {
+			if (answerWordArray[j] === guess) {
+				alreadyGuessed = true;
+				break;
+			}
+		}
+		if (alreadyGuessed) {
+			alert("You already guessed that letter.");
+			continue;
+		}
+	}
+}
