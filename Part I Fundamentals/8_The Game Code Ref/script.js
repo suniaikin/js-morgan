@@ -78,10 +78,10 @@ while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
 			continue;
 		}
 		let foundLetter = false;
-		for (let x = 0; x < word.length; x++) {
-			if (word[x] === guess && answerArray[x] === "_") {
-				answerArray[x] = guess;
-				if (answerArray[x] !== "_" ) {
+		for (let y = 0; y < word.length; y++) {
+			if (word[y] === guess && answerArray[y] === "_") {
+				answerArray[y] = guess;
+				if (answerArray[y] !== "_" ) {
 					remainingLetters--;
 					foundLetter = true;
 				}

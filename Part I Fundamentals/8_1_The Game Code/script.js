@@ -35,5 +35,17 @@ while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
 			alert("You already guessed that letter.");
 			continue;
 		}
+		let foundLetter = false;
+		for (let x = 0; x < randomWord.length; x++) {
+			if (randomWord[x] === guess && answerWordArray[x] === "_") {
+				answerWordArray[x] = guess;
+				if (answerArray[x] !== "_" ) {
+					remainingLetters--;
+					foundLetter = true;
+				}
+			}
+		}
+	
+		
 	}
 }
