@@ -10,8 +10,15 @@ let sayHelloTo = function (name) {
 sayHelloTo("Nick")
 
 let drawCats = function (howManyTimes) {
-for (let i = 0; i < howManyTimes; i++) {
-console.log(i + " =^.^= ");
+	for (let i = 0; i < howManyTimes; i++) {
+		console.log(i + " =^.^= ");
+	}
 }
+
+
+let printMultipleTimes = function (howManyTimes, whatToDraw) {
+	for (var i = 0; i < howManyTimes; i++) {
+		console.log(i + " " + whatToDraw);
+	}
 }
-drawCats(5)
+printMultipleTimes(5, "hello world!");

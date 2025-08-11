@@ -51,6 +51,7 @@ while (remainingLetters > 0 && attempts < MAX_ATTEMPTS) {
 		}
 		
 		
+		
 	}
 }
 if (remainingLetters === 0) {
