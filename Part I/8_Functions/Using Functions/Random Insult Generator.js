@@ -11,4 +11,14 @@ let randomWord = randomWords[Math.floor(Math.random() * 5)];
 let randomString = "Your " + randomBodyPart + " is like a " + randomAdjective + " " + randomWord + "!!!";
 console.log(randomString);
 
-// Creating a function
+// Creating a function of a random word
+
+function getRandomInt(array) {
+	return array[Math.floor(Math.random() * array.length)];
+}
+// Creating a sentence from random words
+
+let string = `Your ${getRandomInt(randomBodyParts)} is like a ${getRandomInt(randomAdjectives)} ${getRandomInt(randomWords)}`;
+console.log(string)
+
+// Creating a big insult
