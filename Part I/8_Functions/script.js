@@ -1,13 +1,9 @@
 let ourFirstFunction = function () {
 	console.log("Hello world!");
 }
-ourFirstFunction()
-
 let sayHelloTo = function (name) {
 	console.log("Hello " + name + "!");
 }
-
-sayHelloTo("Nick")
 
 let drawCats = function (howManyTimes) {
 	for (let i = 0; i < howManyTimes; i++) {
@@ -21,7 +17,12 @@ let printMultipleTimes = function (howManyTimes, whatToDraw) {
 		console.log(i + " " + whatToDraw);
 	}
 }
-printMultipleTimes(5, "hello world!");
+// printMultipleTimes(5, "hello world!");
 
 let show = 5 + Math.floor(1.2345);
-console.log(show);
+
+let double = function (number) {
+ return number * 2;
+}
+
+double(120)
