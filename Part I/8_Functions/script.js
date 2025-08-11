@@ -22,3 +22,6 @@ let printMultipleTimes = function (howManyTimes, whatToDraw) {
 	}
 }
 printMultipleTimes(5, "hello world!");
+
+let show = 5 + Math.floor(1.2345);
+console.log(show);
