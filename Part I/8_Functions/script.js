@@ -13,7 +13,7 @@ let drawCats = function (howManyTimes) {
 
 
 let printMultipleTimes = function (howManyTimes, whatToDraw) {
-	for (var i = 0; i < howManyTimes; i++) {
+	for (let i = 0; i < howManyTimes; i++) {
 		console.log(i + " " + whatToDraw);
 	}
 }
