@@ -7,8 +7,8 @@ let randomWords = [
 let show = randomWords[Math.floor(Math.random() * randomWords.length)];
 console.log(show);
 
-let pickWord = function (word) {
-	return randomWords[Math.floor(Math.random() * randomWords.length)]
-}
-
+let pickWord = function (word) { return randomWords[Math.floor(Math.random() * randomWords.length)]}
 console.log(pickWord(randomWords))
+
+let randomWords2 = ["Planet", "Worm", "Flower", "Computer"];
+console.log(pickWord(randomWords2))
