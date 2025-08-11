@@ -1,4 +1,4 @@
-let randomBodyParts = ["Face", "Nose", "Hair"];
+/*let randomBodyParts = ["Face", "Nose", "Hair"];
 let randomAdjectives = ["Smelly", "Boring", "Stupid"];
 let randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
 // Pick a random body part from the randomBodyParts array:
@@ -9,16 +9,33 @@ let randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
 let randomWord = randomWords[Math.floor(Math.random() * 5)];
 // Join all the random strings into a sentence:
 let randomString = "Your " + randomBodyPart + " is like a " + randomAdjective + " " + randomWord + "!!!";
-console.log(randomString);
+console.log(randomString);*/
 
 // Creating a function of a random word
 
 function getRandomInt(array) {
 	return array[Math.floor(Math.random() * array.length)];
 }
+
 // Creating a sentence from random words
 
-let string = `Your ${getRandomInt(randomBodyParts)} is like a ${getRandomInt(randomAdjectives)} ${getRandomInt(randomWords)}`;
-console.log(string)
+/*let string = `Your ${getRandomInt(randomBodyParts)} is like a ${getRandomInt(randomAdjectives)} ${getRandomInt(randomWords)}`;
+console.log(string)*/
 
 // Creating a big insult
+
+const wordsSet = {
+	bodyParts: ["Face", "Nose", "Hair"],
+	adjectives: ["Smelly", "Boring", "Stupid"],
+	words: ["Fly", "Marmot", "Stick", "Monkey", "Rat"]
+}
+
+function getBigRandomInt(obj) {
+	let values = []
+	for (let key in obj) {
+		values.push(obj[key])
+	}
+	return values;
+}
+
+console.log(getBigRandomInt(wordsSet));
