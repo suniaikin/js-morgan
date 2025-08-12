@@ -31,19 +31,17 @@ const wordsSet = {
 }
 
 
-function getBigRandomInt(obj) {
-	let values = []
+function getRandomSentence(obj) {
+	let sentenceParts = [];
+
 	for (let key in obj) {
-		values.push(obj[key])
+		let arr = obj[key]; // массив слов
+		let randomWord = arr[Math.floor(Math.random() * arr.length)];
+		sentenceParts.push(randomWord); // добавляем в предложение
 	}
-	let randomArray
-	for (let i = 0; i < values.length; i++) {
-		randomArray = values[Math.floor(Math.random() * values.length)];
-	}
-	return randomArray
+
+	return sentenceParts.join(" "); // склеиваем через пробел
 }
 
 
-
-console.log(getBigRandomInt(wordsSet));
-
+console.log(getRandomSentence(wordsSet));
