@@ -35,13 +35,12 @@ function getRandomSentence(obj) {
 	let sentenceParts = [];
 
 	for (let key in obj) {
-		let arr = obj[key]; // массив слов
+		let arr = obj[key]; // words array
 		let randomWord = arr[Math.floor(Math.random() * arr.length)];
-		sentenceParts.push(randomWord); // добавляем в предложение
+		sentenceParts.push(randomWord); // add to sentence
 	}
 
-	return sentenceParts.join(" "); // склеиваем через пробел
+	return sentenceParts.join(" "); // join with space
 }
-
-
+m,
 console.log(getRandomSentence(wordsSet));
