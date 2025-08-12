@@ -30,12 +30,20 @@ const wordsSet = {
 	words: ["Fly", "Marmot", "Stick", "Monkey", "Rat"]
 }
 
+
 function getBigRandomInt(obj) {
 	let values = []
 	for (let key in obj) {
 		values.push(obj[key])
 	}
-	return values;
+	let randomArray
+	for (let i = 0; i < values.length; i++) {
+		randomArray = values[Math.floor(Math.random() * values.length)];
+	}
+	return randomArray
 }
 
+
+
 console.log(getBigRandomInt(wordsSet));
+
