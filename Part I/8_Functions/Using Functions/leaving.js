@@ -22,5 +22,4 @@ let medalForScore = function (score) {
     }
     return "Gold";
     }
-
     console.log(medalForScore(5))
