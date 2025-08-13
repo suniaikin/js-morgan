@@ -9,8 +9,7 @@ function getRandomWords(obj) {
 	for (let key in obj) {
 		result.push(obj[key][Math.floor(Math.random() * obj[key].length)]);
 	}
-	return result;
+	return result.join(" ");
 }
-
 
 console.log(getRandomWords(wordsSet));
