@@ -9,3 +9,7 @@ function areArraysSame (arr1, arr2) {
 	}
 	return true;
 }
+
+console.log(areArraysSame([1, 2, 3], [4, 5, 6]))
+console.log(areArraysSame([1, 2, 3], [1, 2, 3]))
+console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]))
