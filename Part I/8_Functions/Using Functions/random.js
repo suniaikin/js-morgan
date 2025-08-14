@@ -11,5 +11,4 @@ function getRandomWords(obj) {
 	}
 	return result.join(" ");
 }
-
 console.log(getRandomWords(wordsSet));

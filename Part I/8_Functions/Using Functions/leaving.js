@@ -7,9 +7,9 @@ let fifthLetter = function (name) {
     return;
     }
     return "Пятая буква вашего имени: " + name[1] + ".";
-    }
-
+    } 
     console.log(fifthLetter("Andrei"))
+
 
 /* Using return Multiple Times Instead of if...else Statements */
 
