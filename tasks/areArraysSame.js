@@ -12,7 +12,6 @@ function areArraysSame (arr1, arr2) {
 
 console.log(areArraysSame([1, 2, 3], [1, 2, 3]))
 console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]))
-console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]))
 
 
 
