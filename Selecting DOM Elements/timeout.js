@@ -1,4 +1,13 @@
-let timeUp = function () {
-	alert("Время вышло!");
+// let timeUp = function () {
+// 	alert("Время вышло!");
+// };
+// setTimeout(timeUp, 3000);
+
+
+let doHomeworkAlarm = function () {
+	alert("Эй! Пора делать домашку!");
 };
-setTimeout(timeUp, 3000);
+let timeoutId = setTimeout(doHomeworkAlarm, 300);
+clearTimeout(timeoutId);
+
+
