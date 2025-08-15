@@ -8,7 +8,5 @@ let printMessage = function () {
         console.log("Интервал остановлен!");
     }
 };
-
-let intervalId = setInterval(printMessage, 1000);
-
+let intervalId = setInterval(printMessage, 5000);
 console.log(intervalId) 
